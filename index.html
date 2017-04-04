@@ -6,69 +6,40 @@
     <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
     <script src="js/scripts.js"></script>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <title>Address Book</title>
+    <title>Bank Account</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Address book</h1>
-
-      <div class="row">
-        <div class="col-md-6">
-          <h2>Add a contact:</h2>
-          <form id="new-contact">
-            <div class="form-group">
-              <label for="new-first-name">First name</label>
-              <input type="text" class="form-control" id="new-first-name">
-            </div>
-            <div class="form-group">
-              <label for="new-last-name">Last name</label>
-              <input type="text" class="form-control" id="new-last-name">
-            </div>
-
-            <div id="new-addresses">
-              <div class="new-address">
-                <select class="form-group" id="address-type">
-                  <option value="home">Home</option>
-                  <option value="work">Work</option>
-                </select>
-                <div class="form-group">
-                  <label for="new-street">Street</label>
-                  <input type="text" class="form-control new-street">
-                </div>
-                <div class="form-group">
-                  <label for="new-city">City</label>
-                  <input type="text" class="form-control new-city">
-                </div>
-                <div class="form-group">
-                  <label for="new-state">State</label>
-                  <input type="text" class="form-control new-state">
-                </div>
-              </div>
-            </div>
-
-            <span class="btn btn-primary" id="add-address">Another address</span>
-
-            <button type="submit" class="btn">Add</button>
-          </form>
-
-          <h2>Contacts:</h2>
-          <ul id="contacts">
-
-          </ul>
-        </div> <!--column 1 close-->
-        <div class="col-md-6">
-          <div id="show-contact">
-            <h2></h2>
-
-            <p>First name: <span class="first-name"></span></p>
-            <p>Last name: <span class="last-name"></span></p>
-            <p>Addresses:</p>
-            <ul id="addresses">
-
-            </ul>
-          </div>
-        </div><!--column 2 close-->
-      </div>
+    <div class="jumbotron">
+      <h1>Welcome to the Best Credit Union Ever!</h1>
+      <h2>See you savings grow!</h2>
     </div>
+    <div class="container">
+      <form id="bank-form">
+        <div id="new-account">
+          <h3>Register a new account:</h3><br>
+          <label for="name">Name: </label>
+          <input id="name" type="text">
+          <br><br>
+          <div id="initial-deposit-field">
+            <label for="initial-deposit">Intial Deposit: </label>
+            <input id="initial-deposit" type="number" min="10">
+          </div>
+          <br><br>
+        </div><!--bank-form close-->
+        <div id="deposit-or-withdraw">
+          <h3>Deposit or withdraw funds:</h3><br>
+          <label for="deposit-amount">Deposit-amount: </label>
+          <input id="deposit-amount" type="number" min="1">
+          <br><br>
+          <label for="withdrawal-amount">Withdrawal-amount: </label>
+          <input id="withdrawal-amount" type="number" min="1">
+          <br><br>
+        </div> <!--deposit-withdraw close-->
+        <button type="submit">Submit</button>
+      </form>
+      <div id="output">
+        <h4>Current Balance: </h4>
+      </div> <!--Output Close -->
+    </div> <!--Container Close -->
   </body>
 </html>

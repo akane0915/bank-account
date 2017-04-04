@@ -1,20 +1,6 @@
-# Address Book
-#### Store your contacts with this Address Book
-#### By Sean Pierce and Asia Kane
+## Specifications:
 
-## Description
-Address Book provides a way for the user to input information about their contacts. The application can store and display the appropriate information when the user clicks on one of their previously entered contacts.
-
-## Setup/Installation Requirements
-* Clone, or download repo
-* Open index.html in browser
-
-## Known issues
-No known issues/ not connected to a database
-## Technologies Used
-* javascript/ jQuery
-## Support and contact details
-_comment on this repo to contact_
-### License
-_MIT_
-Copyright (c) _2017_ **Sean Pierce and Asia Kane** _(for Epicodus)_
+| Behavior |  Input   |  Output  |
+|----------|:--------:|:--------:|
+|Program provides a form for the user to enter name and initial deposit and a submit button to display current balance in output section |Name="Asia"  Initial Deposit= $400| Current Balance= $400|
+|Once the user submits an initial deposit, the program displays another form for the user to enter a deposit amount or a withdrawal amount and updates the current balance | (Given current balance = $400) Deposit= $300 | Current Balance = $700 | 
